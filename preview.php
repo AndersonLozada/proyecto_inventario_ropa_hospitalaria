@@ -11,22 +11,7 @@
   <title>Preview</title>
   <meta charset="utf-8">   
   <link rel="stylesheet" href="estilos.css" media="all" type="text/css"> 
-  <link rel='icon' type="image/png"href="images/icono.png">
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    function eliminar() {
-      var resultado = window.confirm('Estas seguro que desea eliminar?');
-          if (resultado == true) {
-            var id =prompt("confirme el id: ");
-            var origen =prompt("confirme si es salida o entrada: S (salida)  E (entrada) "); 
-            
-        } else { 
-             window.alert('error');
-        }
-       
-        };
- </script> 
+  <link rel='icon' type="image/png"href="images/icono.png"> 
 
 </head>
 <body>
@@ -104,8 +89,7 @@ while ($fila = mysqli_fetch_array($sql)){
     <td id="td"><?php echo $fila[2] ?></td>
     <td id="td"><?php echo $fila[3] ?></td> 
     <td id="td"><?php echo $fila[4] ?></td>
-    <td id="td"><?php echo $fila[5] ?></td>
-    <td><input type="button" value="inactivar" id="eliminar" onclick="eliminar()"></td>
+    <td id="td"><?php echo $fila[5] ?></td>    
     
    </tr>
 <?php }} else { 

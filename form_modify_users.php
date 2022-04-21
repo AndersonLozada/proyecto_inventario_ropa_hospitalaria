@@ -6,7 +6,7 @@ require("login.php");
 <html lang="es">
 <head>
 
-  <title>Usuarios</title>
+  <title>Modificar usuario</title>
   <meta charset="utf-8">   
   <link rel="stylesheet" href="estilos.css" media="all" type="text/css"> 
   <link rel='icon' type="image/png"href="images/icono.png">
@@ -19,33 +19,13 @@ require("login.php");
 <?php include_once('menu.html'); ?>
 </aside>
 <section>
-<h1>Crear Usuarios</h1>
-<form action="#" role="form" method="POST" >   
+<h1>Modificar Usuario</h1>
+<form action="../inventario/buscar_usuario_modificar.php" role="form" method="POST" >   
 
 <div>
-  <label for="usuario">Usuario:</label>
+  <input id="usuario"  type="text" required placeholder="ingrese el usuario" name="usuario"> 
 </div>
-<div>
-  <input id="usuario"  type="number" required> 
-</div>
-
-<div>
-      <label for="cedula">Contraseña:</label><br>
-</div>   
-<div>   
-  <input id="cedula"  type="password" required>
-</div>
-<div>
-      <label for="cedula">Confirmar Contraseña:</label><br>
-</div>   
-<div>   
-  <input id="cedula"  type="password" required>
-</div>
-<br>
-<tr><td colspan="2">
-<br>
-      <button type="submit"  name="submit" >Crear </span></button>  
-      <button type="reset" >Limpiar </button>       
+      <button type="submit"  name="submit" >Buscar </span></button>       
       </td></tr>
     </form>  
 </section>

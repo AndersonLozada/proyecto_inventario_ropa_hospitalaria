@@ -2,7 +2,7 @@
 <html>
 <head>
 <!-- <meta http-equiv="refresh" content="2;url=http://192.168.10.26:81/pages/form_registro.php"> -->
-<meta http-equiv="refresh" content="2;url=http://172.19.15.181/inventario/form_create_users.php">
+<meta http-equiv="refresh" content="2;url=http://172.19.15.180/inventario/form_create_users.php">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
@@ -18,8 +18,8 @@ require("conexion.php");
        $categoria=$_POST['categoria'];
        $sucursal=$_POST['sucursal'];      
 	   
-	   $sql2 = "INSERT INTO usuarios(nombre, apellido, cedula, usuario, contrasena, categoria, sucursal)
-                VALUES ('$nombre', '$apellido',$cedula, '$cedula' '$usuario', '$hashedpass', '$categoria', '$sucursal' )";
+	   $sql2 = "INSERT INTO usuarios(nombre, apellido, cedula, usuario, contrasena, categoria, sucursal, estado)
+                VALUES ('$nombre', '$apellido',$cedula, '$cedula' '$usuario', '$hashedpass', '$categoria', '$sucursal', 1 )";
 
 				if (mysqli_query($conn,$sql2)) {
 ?>

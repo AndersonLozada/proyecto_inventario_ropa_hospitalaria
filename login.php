@@ -1,5 +1,5 @@
-<?php
 
+<?php
 $user = $_POST['form_user'];
 $pass = $_POST['form_password'];
 //archivo con las consultas para ingreso al panel
@@ -15,11 +15,13 @@ if(!empty(trim($user)) && !empty(trim($pass))){
     //realizo la consulta para ver si existe el usuario ingresado
     $query = mysqli_query($conn, "SELECT * FROM usuarios WHERE usuario='$user'");
 
-    //si la consulta tiene valores, existe el usuario, procedo a consultar la clave
+    //si la consulta tiene valores, existe el usuario, procedo a consultar el estado del usuario
     if(mysqli_num_rows($query) >0){
         $row = mysqli_fetch_assoc($query);        
-
-        //asigno el valor de la clave ingresada en formulario para mejor vista
+        $status = $row['estado']; 
+        if($status==2){
+            $error_message = "usuario inactivo.";
+        } else{      //asigno el valor de la clave ingresada en formulario para mejor vista
         $password = $row['contrasena'];      
         $id = $row['id'];          
         //verifico que la clave ingresada sea igual a la almacenada en la tabla de la base de datos
@@ -43,6 +45,7 @@ if(!empty(trim($user)) && !empty(trim($pass))){
 
     }
 }
+    }
 else{
     //si usuario no existe mostrar error
     $error_message = "usuario o contraseña incorrectos.";

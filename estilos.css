@@ -76,6 +76,7 @@ input[type=password] {
     cursor: pointer;       
     border-radius: 3px; 
 }
+
 select{
     width: 70%;
     height: 30px;
@@ -133,7 +134,6 @@ button{
 }
 
 
-
 section{    
     margin: 0% 50% 0% 30%;
     width: 40%;
@@ -150,6 +150,25 @@ section{
 .h1_inicio{
     margin: 5% 10% 0% 25%;
 }
+.section_update_user{
+    margin: 0% 50% 0% 30%;
+    width: 40%;
+    height: auto;
+    background-color: transparent;  
+}
+.tipo_datos{
+position:relative;
+top: 0px;
+left: 0px;
+
+
+}
+.datos{
+margin-left: auto;
+margin-top: 10px;
+}
+
+
 @media screen and (max-width: 600px){
     nav span {
         flex-direction: column;
