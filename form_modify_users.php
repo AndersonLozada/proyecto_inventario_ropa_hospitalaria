@@ -16,11 +16,11 @@ require("login.php");
 <body>
 <div class="row">
 <aside>
-<?php include_once('menu.html'); ?>
+<?php include_once('menu.php'); ?>
 </aside>
 <section>
 <h1>Modificar Usuario</h1>
-<form action="../inventario/buscar_usuario_modificar.php" role="form" method="POST" >   
+<form action="../buscar_usuario_modificar.php" role="form" method="POST" >   
 
 <div>
   <input id="usuario"  type="text" required placeholder="ingrese el usuario" name="usuario"> 

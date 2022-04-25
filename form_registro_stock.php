@@ -14,12 +14,12 @@ require("login.php");
 
 <body>
 <aside>
-<?php include_once('menu.html'); ?>
+<?php include_once('menu.php'); ?>
 </aside>
 <div class="row">
 <section>
 <h1 >Estándar Ropa Hospitalaria</h1>
-<form  action="../prueba/insert_stock.php" role="form" method="POST" >   
+<form  action="../inventario/insert_stock.php" role="form" method="POST" >   
 
 <div>
   <select  name="origen"  required> 

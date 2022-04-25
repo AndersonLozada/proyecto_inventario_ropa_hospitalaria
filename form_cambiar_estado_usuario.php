@@ -6,7 +6,7 @@ require("login.php");
 <html lang="es">
 <head>
 
-  <title>Grupos</title>
+  <title>Usuarios</title>
   <meta charset="utf-8">   
   <link rel="stylesheet" href="estilos.css" media="all" type="text/css"> 
   <link rel='icon' type="image/png"href="images/icono.png">
@@ -20,22 +20,21 @@ require("login.php");
 </aside>
 <div class="div_form">
 <section>
-<h1>Inactivar Grupo</h1>
-<form action="#" role="form" method="POST" >   
+<h1>Cambiar estado de  Usuario</h1>
+<form action="../inventario/cambiar_estado_usuario.php" role="form" method="POST">   
 
 <div>
-<div>
-     <input list="categoria" name="categoria"  type="text" required placeholder="Grupo">      
+  <input id="usuario"  type="text" class="usuario" required placeholder="Usuario" name="usuario" > 
 </div>
-                  <datalist id="categoria">      
-                    <option>Administrador</option>
-                    <option>General</option>
-                    <option>Inventario</option>
-                  </datalist>
-  
+<div>
+  <select  name="estado"  required> 
+                     <option selected="true" disabled="disabled">seleccione el estado</option>    
+                    <option>Activar</option>
+                    <option>Inactivar</option>
+</select>
 </div>
 <tr><td colspan="2">
-      <button type="submit"  name="submit" >Inactivar </span></button>     
+      <button type="submit"  name="submit" >Actualizar </span></button>     
       </td></tr>
     </form>  
 </section>

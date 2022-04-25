@@ -15,7 +15,7 @@ require("login.php");
 
 <body>
 <aside>
-<?php include_once('menu.html'); ?>
+<?php include_once('menu.php'); ?>
 </aside>
 <div class="row">
 <section>

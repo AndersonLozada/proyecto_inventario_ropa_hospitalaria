@@ -25,7 +25,7 @@ $acum=1;
   $rsResult = mysqli_query($conn, $sql1) or die(mysqli_error($conn));
   if(mysqli_num_rows($rsResult)>0)
   {
-      $i = 0;
+      $i = 1;
       while ($i < mysqli_num_fields($rsResult)){
          $field = mysqli_fetch_field_direct($rsResult, $i);
          $fieldName=$field->name;
@@ -39,11 +39,10 @@ $acum=1;
 
 ?>
 
-<?php        
-         $bolWhite=true;
-         while ($row = mysqli_fetch_assoc($rsResult)){
-           echo $bolWhite ? "<tr>" : "<tr>";
-             $bolWhite=!$bolWhite;        
+<?php       
+
+
+         while ($row = mysqli_fetch_assoc($rsResult)){     
              foreach($row as $data) {
 
   ?>
@@ -51,12 +50,12 @@ $acum=1;
  <input type="text" value=<?php echo $data ?>></input>
              
   <?php
-        
       }
-    }          
+     
+  }          
 ?>
 
-    <button type="submit"  name="submit" >ACtualizar </button> 
+    <br><button type="submit"  name="submit" >Actualizar </button> 
 </form>
 </section>
     </body>

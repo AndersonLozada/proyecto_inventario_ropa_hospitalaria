@@ -5,6 +5,7 @@
 	<title>Menù Lateral con Css</title>
 	<link rel="stylesheet" href="menu_style.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -12,7 +13,8 @@
 			<label for="btn-menu">☰</label>
 		</div>
 	
-			<nav class="menu">							
+			<nav class="menu">
+										
 				<a href="#">Soporte</a>
 				<a href="./end_sesion.php">Cerrar Sesion</a>
 			</nav>
@@ -34,8 +36,8 @@
 			<li><a href="./form_create_users.php">Crear</a></li>
 			<li><a href="./form_modify_users.php">modificar</a></li>
 			<li><a href="./form_update_pass.php">Cambiar contraseña</a></li>
-			<li><a href="./form_inactivar_usuario.php">Inactivar Usuario</a></li>
-			<li><a href="./form_inactivar_grupo.php">Inactivar Grupo</a></li>
+			<li><a href="./form_cambiar_estado_usuario.php">Activar/ Inactivar Usuario</a></li>
+			<li><a href="./form_inactivar_grupo.php">Activar/ Inactivar Grupo</a></li>
 			</ul>
 			</li>
 			</ul>

@@ -1,7 +1,7 @@
 <?php
-session_start();
 require("conexion.php");
 require("login.php");
+session_start();
 ?>
 <html lang="es">
 <head>
@@ -14,7 +14,7 @@ require("login.php");
 
 <body>
 <aside>
-<?php include_once('menu.html'); ?>
+<?php include_once('menu.php'); ?>
 </aside>
 <div class="row">
 <section>

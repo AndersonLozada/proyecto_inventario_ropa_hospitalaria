@@ -33,10 +33,10 @@ if(!empty(trim($user)) && !empty(trim($pass))){
 
             //coloco usuario en una variable de sesion para poder acceder a otras paginas
             session_start();
-            $_SESSION['user'] = $user;
+            $_SESSION['usuario'] = $user;
             
             //direcciono al panel de administracion o pagina de logueo exitoso.
-            header('location: inicio.html');
+            header('location: inicio.php');
             exit;            
     }
     else{
