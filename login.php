@@ -21,12 +21,12 @@ if(!empty(trim($user)) && !empty(trim($pass))){
         $status = $row['estado']; 
         if($status==2){
             $error_message = "usuario inactivo.";
-        } else{      //asigno el valor de la clave ingresada en formulario para mejor vista
+        } else{      
         $password = $row['contrasena'];      
         $id = $row['id'];          
         //verifico que la clave ingresada sea igual a la almacenada en la tabla de la base de datos
         //si la verificacion es cierta
-        if($password == $pass){
+        if(password_verify($pass,$password)){
 
             //actualizo el id de sesion actual con uno generado mas reciente
             session_regenerate_id(true);

@@ -20,7 +20,7 @@ require("login.php");
 </aside>
 <section>
 <h1>Modificar Usuario</h1>
-<form action="../buscar_usuario_modificar.php" role="form" method="POST" >   
+<form action="../proyecto_inventario_ropa_hospitalaria/buscar_usuario_modificar.php" role="form" method="POST" >   
 
 <div>
   <input id="usuario"  type="text" required placeholder="ingrese el usuario" name="usuario"> 

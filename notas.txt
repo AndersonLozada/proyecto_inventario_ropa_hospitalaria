@@ -1,0 +1,12 @@
+pendientes//
+
+insert stock==form ya modificado para solicitar la informacion, pendiente realizar ajuste al insert para actualizar datos en tablas, promedio, constante y stock
+
+
+create ==realiza modificacion para que la unidad creada muestre columnas de las constantes, promedio y total de prendas luego de la operacion promedio * constantes
+
+buscar usuario modificar == pendiente ajustar visualizacion de datos traidos del usuario para modificar
+
+form inventario == pendiente agregar opcion de adicionar prenda que corresponda a otra unidad
+
+pendiente mostrar usuario que inicia sesion para guardarlo junto con los inputs que realice

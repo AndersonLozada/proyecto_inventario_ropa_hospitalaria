@@ -20,7 +20,7 @@ require("login.php");
 <div class="row">
 <section>
 <h1>Cambiar contraseña</h1>
-<form id="update_pass"> 
+<form action="../proyecto_inventario_ropa_hospitalaria/update_pass.php" role="form" method="POST"> 
 
 <div>
   <input id="usuario"  type="text" name="usuario" required placeholder="Usuario"> 
@@ -30,7 +30,7 @@ require("login.php");
   <input id="contrasena" name="pass" type="text" required placeholder="Contraseña"> 
 </div>
 <div>
-  <input id="confirm" name="confirm" type="text" required placeholder="Confirmar"> 
+  <input id="confirm" name="confirm" type="text" required placeholder="Confirmar contraseña"> 
 </div>
 <tr><td colspan="2">
       <button type="submit"  name="submit" >Actualizar </span></button>  
@@ -39,8 +39,5 @@ require("login.php");
     </form>  
 </section>
 </div>
-<script src="./functions.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
 </html>

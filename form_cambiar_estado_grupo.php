@@ -6,7 +6,7 @@ require("login.php");
 <html lang="es">
 <head>
 
-  <title>Usuarios</title>
+  <title>Grupos</title>
   <meta charset="utf-8">   
   <link rel="stylesheet" href="estilos.css" media="all" type="text/css"> 
   <link rel='icon' type="image/png"href="images/icono.png">
@@ -20,11 +20,16 @@ require("login.php");
 </aside>
 <div class="div_form">
 <section>
-<h1>Cambiar estado de  Usuario</h1>
-<form action="../inventario/cambiar_estado_usuario.php" role="form" method="POST">   
+<h1>Cambiar estado de Grupo</h1>
+<form action="../proyecto_inventario_ropa_hospitalaria/cambiar_estado_grupo.php" role="form" method="POST" >   
 
 <div>
-  <input id="usuario"  type="text" class="usuario" required placeholder="Usuario" name="usuario" > 
+<div>
+     <select name="grupo" require> 
+                   <option selected="true" disabled="disabled">Seleccione el grupo</option>                  
+                    <option>Gestion Ambiental</option>
+                    <option>Inventario</option>
+</select>                    
 </div>
 <div>
   <select  name="estado"  required> 

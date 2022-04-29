@@ -167,6 +167,9 @@ left: 0px;
 margin-left: auto;
 margin-top: 10px;
 }
+table{
+    text-align: center;
+}
 
 
 @media screen and (max-width: 600px){
@@ -174,7 +177,7 @@ margin-top: 10px;
         flex-direction: column;
         
     }
-    form{
+    form, .form_index{
         width: 100%;
         margin: 0%;
     }

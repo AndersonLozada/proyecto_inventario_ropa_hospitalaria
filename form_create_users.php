@@ -20,7 +20,7 @@ require("login.php");
 <div class="row">
 <section>
 <h1>Crear Usuarios</h1>
-<form action="../inventario/insert_create_user.php" role="form" method="POST" >   
+<form action="../proyecto_inventario_ropa_hospitalaria/insert_create_user.php" role="form" method="POST" >   
 
 <div>
   <input id="nombre"  type="text" required name="nombre" placeholder="Nombre"> 
@@ -39,7 +39,7 @@ require("login.php");
      <select  name="categoria" require> 
                     <option selected="true" disabled="disabled">Seleccione un grupo</option>
                     <option>Administrador</option>
-                    <option>General</option>
+                    <option>Gestion Ambiental</option>
                     <option>Inventario</option>
 </select>
 </div>                  

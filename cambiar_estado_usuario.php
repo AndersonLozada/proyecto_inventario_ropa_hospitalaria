@@ -28,7 +28,7 @@ require("conexion.php");
 				else {
 	?>
 					<script type="text/javascript">
-					swal('Error verifique el usuario','','error');        
+					swal('Error, verifique el usuario','','error');        
 					</script>
 	<?php
 			}		

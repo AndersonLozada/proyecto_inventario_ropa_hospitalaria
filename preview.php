@@ -102,13 +102,13 @@ if($origen!="STOCK" and $origen !="ENTRADAS" and $origen != "SALIDAS" and $orige
     <h3 >Sucursal: Neiva</h3>
     <h3 >Unidad: <?php echo $origen ?></h3>
     <tr>
-        <th id="th"> ID </th>
-        <th id="th">Descripcion </th>
-        <th id="th"> Estándar </th>
-        <th id="th"> Conteo </th>
+        <th id="th"> N° </th>
+        <th id="th">Prenda </th>
+        <th id="th"> Total prendas (B)x(C) </th>
+        <th id="th"> Total prendas en inventario </th>
         <th id="th"> Entradas </th>
         <th id="th"> Salidas </th>
-        <th id="th"> Faltante </th>             
+        <th id="th"> Numero de prendas faltantes </th>             
     </tr>   
 <?php
 $sql = mysqli_query($conn,"SELECT * FROM $origen");

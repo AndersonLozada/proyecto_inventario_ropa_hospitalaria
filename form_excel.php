@@ -19,7 +19,7 @@ require("login.php");
 </aside>
 <div class="row">
 <section>
-<H1>Visualizar,Descargar o Crear Excel</H1>
+<H1>Visualizar,Descargar o Crear Reporte</H1>
 <!-- en este caso el form no lleva action ya que usamos varios botones que nos enviaran al proceso solicitado de cada uno de ellos -->
 <form   role="form" method="POST" >
 

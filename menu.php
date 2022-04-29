@@ -9,8 +9,8 @@
 <body>
 	<header class="header">
 		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu">☰</label>
+		<div class="btn-menu">			
+			<label for="btn-menu"> Menu</label>
 		</div>
 	
 			<nav class="menu">
@@ -37,7 +37,7 @@
 			<li><a href="./form_modify_users.php">modificar</a></li>
 			<li><a href="./form_update_pass.php">Cambiar contraseña</a></li>
 			<li><a href="./form_cambiar_estado_usuario.php">Activar/ Inactivar Usuario</a></li>
-			<li><a href="./form_inactivar_grupo.php">Activar/ Inactivar Grupo</a></li>
+			<li><a href="./form_cambiar_estado_grupo.php">Activar/ Inactivar Grupo</a></li>
 			</ul>
 			</li>
 			</ul>

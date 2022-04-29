@@ -19,7 +19,7 @@ require("login.php");
 <div class="row">
 <section>
 <h1 >Estándar Ropa Hospitalaria</h1>
-<form  action="../inventario/insert_stock.php" role="form" method="POST" >   
+<form  action="../proyecto_inventario_ropa_hospitalaria/insert_stock.php" role="form" method="POST" >   
 
 <div>
   <select  name="origen"  required> 
@@ -136,7 +136,10 @@ require("login.php");
 </select>
 </div>    
 <div>   
-  <input name="cantidad" required  type="number" placeholder="Cantidad"> 
+  <input name="Constante" required  type="number" placeholder="Constante" min="1"> 
+</div>
+<div>
+  <input name="promedio" required  type="number" placeholder="Número de camas o Promedio de visitantes" min="1"> 
 </div>
       <button type="submit"  name="submit" >Guardar </button>  
       <button type="reset" >Limpiar </button> 

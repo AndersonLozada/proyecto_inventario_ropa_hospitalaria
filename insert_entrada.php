@@ -2,7 +2,7 @@
 <html>
 <head>
 <!-- <meta http-equiv="refresh" content="2;url=http://192.168.10.26:81/pages/form_registro.php"> -->
-<meta http-equiv="refresh" content="2;url=http://172.19.15.181/inventario/form_entrada.php">
+<meta http-equiv="refresh" content="2;url=http://172.19.15.68/proyecto_inventario_ropa_hospitalaria/form_entrada.php">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>

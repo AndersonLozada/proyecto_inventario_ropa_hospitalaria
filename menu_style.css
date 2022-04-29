@@ -77,8 +77,8 @@
 	}
 	.cont-menu{
 		width: 100%;
-		max-width: 250px;
-		background:rgb(94, 158, 253,8%);
+		max-width: 300px;
+		background:rgb(94, 158, 253,20%);
 		height: 100%;
 		position: relative;
 		transition: all 500ms ease;
